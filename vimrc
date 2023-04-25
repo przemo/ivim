@@ -1,9 +1,9 @@
 set nocompatible
-
 " Load up pathogen, using an alternative folder.
 source ~/ivim/pathogen/autoload/pathogen.vim
 execute pathogen#infect('~/ivim/{}')
-
+set shiftwidth=2 smarttab
+set expandtab
 syntax on
 filetype plugin indent on
 
@@ -45,13 +45,15 @@ set undodir=~/backups
 set undofile
 
 " Some of my favourites
-" colorscheme PaperColor
+"colorscheme PaperColor
+colorscheme afterglow 
+"colorscheme molokai 
 " colorscheme seoul
 " colorscheme abstract
 " colorscheme afterglow
-set background=dark
-colorscheme scheakur
-ifont iosevka-fixed-ss04-extended 18
+" set background=light
+" colorscheme scheakur
+ifont set 'Iosevka Fixed SS04' --size 16
 
 let mapleader=","
 let maplocalleader=","
@@ -96,16 +98,16 @@ function! Prose()
   " iabbrev <buffer> >> »
 
   " open most folds
-  " setlocal foldlevel=6
+  setlocal foldlevel=6
 
-  " replace typographical quotes (reedes/vim-textobj-quote)
+  replace typographical quotes (reedes/vim-textobj-quote)
   map <silent> <buffer> <leader>qc <Plug>ReplaceWithCurly
   map <silent> <buffer> <leader>qs <Plug>ReplaceWithStraight
 
-  " highlight words (reedes/vim-wordy)
-  " noremap <silent> <buffer> <F8> :<C-u>NextWordy<cr>
-  " xnoremap <silent> <buffer> <F8> :<C-u>NextWordy<cr>
-  " inoremap <silent> <buffer> <F8> <C-o>:NextWordy<cr>
+  highlight words (reedes/vim-wordy)
+  noremap <silent> <buffer> <F8> :<C-u>NextWordy<cr>
+  xnoremap <silent> <buffer> <F8> :<C-u>NextWordy<cr>
+  inoremap <silent> <buffer> <F8> <C-o>:NextWordy<cr>
   "
   set conceallevel=2 concealcursor=i
 
@@ -136,26 +138,29 @@ map <leader>m :CtrlPBookmark<cr>
 
 
 " In insert or command mode, move normally by using Ctrl
-inoremap <C-h> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-l> <Right>
-cnoremap <C-h> <Left>
-cnoremap <C-j> <Down>
-cnoremap <C-k> <Up>
-cnoremap <C-l> <Right>
+inoremap <D-h> <Left>
+inoremap <D-j> <Down>
+inoremap <D-k> <Up>
+inoremap <D-l> <Right>
+"cnoremap <D-h> <Left>
+"cnoremap <D-j> <Down>
+"cnoremap <D-k> <Up>
+"cnoremap <D-l> <Right>
 
 " Font sizes
-nnoremap <c-0> :ifont +<cr>
-nnoremap <c-9> :ifont -<cr>
+nnoremap <D-0> :ifont +<cr>
+nnoremap <D-9> :ifont -<cr>
 
 let g:goyo_width = 80
 let g:goyo_height = "100%"
-nnoremap <c-8> :Goyo<cr>
-nnoremap <c-1> :call SynGroup()<cr>
+nnoremap <D-8> :Goyo<cr>
+nnoremap <D-1> :call SynGroup()<cr>
 
 " I'm so used to doing this...
-nmap <c-s> :w<cr>
+nmap <D-s> :w<cr>
 
+" add new line in Normal mode
+nmap <S-Enter> O<Esc>j
+nmap <CR> o<Esc>k
 
 " vim: fdm=marker

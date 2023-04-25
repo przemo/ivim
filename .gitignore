@@ -2,3 +2,7 @@
 *.swp
 tags
 TAGS
+.viminfo
+.vimrc
+*.swo
+.vim/*

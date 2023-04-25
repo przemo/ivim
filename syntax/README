@@ -1,28 +1,15 @@
-SAS-Vim
-=======
-
-Vim plugins, syntax and indention for Running SAS and editing SAS programs.
 
 This package is many things.
 
 SAS syntax  by  Zhenhuan Hu
----------------------------
-
-SAS indent  by  Jianzhong Liu
-------------------------------
-
+SAS indent  by  Zhenhuan Hu
 Run, cklog functions by Kent Nassen
------------------------------------
-
-Tagset syntax and Indent by Eric Gebhart
-----------------------------------------
+Tagset syntax by Eric Gebhart
+Tagset indent by Eric Gebhart
 
 This package is the combination of the SAS-Syntax syntax by Zhenhuan Hu
-the sas.vim indent by Jianzhong Liu, The sas run and log file parsing by Kent Nassen,
+the sas.vim indent by Jianzhong Liu, The sas run and log files by Kent Nassen,
 and ODS tagset syntax and indent by Eric Gebhart.
-
-I have more to add from my days as a SAS developer where I ran batch sas on a multitude of
-remote machines and processed the logs for errors. Those tools are coming.
 
 These are the most up to date sas vim plugins which accomodate SAS versions 9.1, 9.2 and 9.3
 
@@ -33,22 +20,13 @@ Also included are the tpl file syntax and indent files for editing ODS Tagsets.
 It does not necessarily support the other template file types like style, table, layout, control or package.
 These are are a work in progress, but are significantly nicer than not having them at all.
 
-Installing:
------------
-
-I recommend Vundle or Pathogen to manage your vim installations. 
-Vundle is the best.  https://github.com/gmarik/vundle
-Add this github to your bundles.  Don't forget to do a Bundle install.  
-
-Bundle "EricGebhart/SAS-Vim"
-
-
 Here is the README files from Zhenhuan's syntax and Jianzhong's indent package.
--------------------------------------------------------------------------------
+
+==========================================================================
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=1089
 
 SAS indent file.
-
+========================================================================
 
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=3522
 
@@ -66,9 +44,7 @@ Please let me know if there is any bugs in the script.
 
 Zhenhuan also has an indent package, which you may wish to try 
 PS: Don't forget to check out my SAS indent script here: http://vim.sourceforge.net/scripts/script.php?script_id=4034
-
-Kent Nassen's Run buffer in SAS and Check SAS log functions.
-------------------------------------------------------------
+================================================================================
 
 Kent's functionality needs a little bit more explanation. For a full explanation see his web page.
 http://www-personal.umich.edu/~knassen/vim/sasfns.html#loadsaslog
@@ -76,7 +52,7 @@ http://www-personal.umich.edu/~knassen/vim/sasfns.html#loadsaslog
 Here is the short version. Adapt and use the mappings as you see fit. If you are using PC sas be sure to check out the code
 and adapt it to running PC sas. The code is fully commented to accodate the situation.
 
-"ADD menu items and key mappings as desired.
+x"ADD menu items and key mappings as desired.
 
 " Add a separator before the SAS menu items
   menu Tools.-Sep-     :
