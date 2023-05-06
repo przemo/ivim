@@ -132,7 +132,7 @@ command! -nargs=0 Prose call Prose()
 "
 let g:ctrlp_working_path_mode = 'ra'
 map <leader>f :CtrlP<cr>
-map <leader>F :CtrlPCurFile<cr>
+map <leader>F :atrlPCurFile<cr>
 map <leader>b :CtrlPBuffer<cr>
 map <leader>m :CtrlPBookmark<cr>
 
