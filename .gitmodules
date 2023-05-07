@@ -67,3 +67,7 @@
 [submodule "vim-rooter"]
 	path = vim-rooter
 	url = https://github.com/airblade/vim-rooter
+[submodule "powerline"]
+[submodule "vim-airline"]
+	path = vim-airline
+	url = https://github.com/vim-airline/vim-airline
