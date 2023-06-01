@@ -71,3 +71,9 @@
 [submodule "vim-airline"]
 	path = vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "vim-table-mode"]
+	path = vim-table-mode
+	url = https://github.com/dhruvasagar/vim-table-mode.git
+[submodule "vim-rst"]
+	path = vim-rst
+	url = https://github.com/habamax/vim-rst.git
