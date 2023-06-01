@@ -77,3 +77,6 @@
 [submodule "vim-rst"]
 	path = vim-rst
 	url = https://github.com/habamax/vim-rst.git
+[submodule "vim-ledger"]
+	path = vim-ledger
+	url = https://github.com/ledger/vim-ledger.git
